@@ -35,8 +35,8 @@ values = df.to_numpy()
 left = values.min()
 P_step = 0
 quantile_list = np.array([left])
-for i in range(len(P10_Coshi)-1):
-    P_step += P10_Coshi[i]
+for i in range(len(P10)-1):
+    P_step += P10[i]
     val = np.quantile(values, P_step)
     quantile_list = np.append(quantile_list, val)
     left = val
@@ -44,10 +44,10 @@ quantile_list = np.append(quantile_list, values.max())
 print(f"Quantile: {quantile_list}")
 
 mu = 0
-for i in range(len(x0)):
-    mu += x0[i] * quantile_list[i+1]
+for i in range(len(mu10)):
+    mu += mu10[i] * quantile_list[i+1]
 scale = 0
-for i in range(len(scale_Coshi)):
-    scale += scale_Coshi[i] * quantile_list[i+1]
+for i in range(len(sigma10)):
+    scale += sigma10[i] * quantile_list[i+1]
 print(f"mu = {mu}, scale = {scale}")
 #print(f"mu = {mu}, scale = {scale/np.sqrt(3)}")
