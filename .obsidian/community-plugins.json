@@ -1,7 +1,7 @@
 [
-  "obsidian-pandoc",
   "table-editor-obsidian",
   "better-word-count",
   "obsidian-languagetool-plugin",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "obsidian-autocomplete-plugin"
 ]
