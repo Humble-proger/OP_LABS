@@ -3,5 +3,6 @@
   "better-word-count",
   "obsidian-languagetool-plugin",
   "obsidian-style-settings",
-  "obsidian-autocomplete-plugin"
+  "obsidian-autocomplete-plugin",
+  "cm-typewriter-scroll-obsidian"
 ]
